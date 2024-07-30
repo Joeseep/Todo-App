@@ -29,10 +29,10 @@ const addTask = () => {
     else{
         taskData[taskItemIndex] = taskItem
     }
-
-    updateTaskContainer();
     //save to localstorage
-    localStorage.setItem("task", JSON.stringify(taskData))
+    localStorage.setItem("task", JSON.stringify(taskData));
+    updateTaskContainer();
+    reset();
 }
 
 const updateTaskContainer = () => {
