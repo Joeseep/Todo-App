@@ -29,6 +29,10 @@ input{
     margin-bottom: 32px;
 }
 
+input:hover{
+    border: solid black;
+}
+
 .input-container{
     display: flex;
     gap: 10px;
@@ -37,7 +41,6 @@ input{
 
 .border{
     padding: 20px;
-    border: 2px solid blueviolet;
 }
 
 .addtask-btn{
@@ -47,6 +50,11 @@ input{
     background-color: blueviolet;
     color: white;
     font-weight: bold;
+}
+
+.addtask-btn:hover{
+    cursor: pointer;
+    border: solid black;
 }
 
 .todo-item{
