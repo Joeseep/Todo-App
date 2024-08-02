@@ -64,7 +64,7 @@ const doneTask = (buttonEl) => {
     currentData = taskData[taskDataIndex];
     buttonEl.parentElement.remove();
     taskData.splice(taskDataIndex, 1);
-    localStorage.setItem("task", taskData)
+    localStorage.setItem("task", JSON.stringify(taskData))
 }
 
 addTaskBtn.addEventListener("click", checkTaskInput)
