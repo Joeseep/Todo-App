@@ -2,7 +2,7 @@ const todo = document.getElementById("todo");
 const addTaskBtn = document.getElementById("addtask-btn");
 const taskContainer = document.getElementById("tasks-container");
 
-const taskData = JSON.parse(localStorage.getItem("task"))||[]; //array for storing todo tasks
+const taskData = JSON.parse(localStorage.getItem("task") || '[]'); //array for storing todo tasks
 let currentData = {}
 
 //check for user input
